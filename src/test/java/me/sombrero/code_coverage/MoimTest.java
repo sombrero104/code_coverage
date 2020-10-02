@@ -1,7 +1,7 @@
 package me.sombrero.code_coverage;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class MoimTest {
 
@@ -10,7 +10,7 @@ public class MoimTest {
         Moim moim = new Moim();
         moim.maxNumberOfAttendees = 100;
         moim.numberOfEnrollment = 10;
-        Assert.assertFalse(moim.isEnrollmentFull());
+        assertFalse(moim.isEnrollmentFull());
     }
 
 }
